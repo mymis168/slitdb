@@ -15,6 +15,11 @@ page = st.navigation(
             title="股價趨勢",
             icon=":material/show_chart:",
         ),
+        st.Page(
+            "db_download.py",
+            title="下載資料庫",
+            icon=":material/database:",
+        ),
     ]
 )
 page.run()
