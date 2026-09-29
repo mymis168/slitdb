@@ -6,7 +6,10 @@ import pandas as pd
 import yfinance as yf
 
 
-DATABASE_PATH = Path(__file__).with_name("stockdb.db")
+#保險方式: 透過__file__ 取得目前所在路徑
+#DATABASE_PATH = Path(__file__).with_name("stockdb.db")
+#透過 .\  (./ ) 指定目前所在目錄亦可
+DATABASE_PATH = "./stockdb.db"
 PERIODS = ("1d", "5d", "1wk", "2wk", "1mo", "3mo", "6mo", "1y")
 
 
